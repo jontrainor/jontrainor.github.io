@@ -30,23 +30,21 @@
 
 <body>
   <header id="header">
-	<nav class="navbar fixed-top navbar-toggleable-md">
+	<nav class="navbar fixed-top navbar-inverse navbar-toggleable-md">
 		<button class="navbar-toggler navbar-toggler-right"
 			type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
 		>
 			<span class="navbar-toggler-icon"></span>
 		</button>
-		<a class="navbar-brand" href="#">
-			<img src="css/images/guacdoc-icon.jpg" width="30" height="30" class="d-inline-block align-top" alt=""> Trainor
-		</a>
+		<a class="navbar-brand" href="/">Trainor</a>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
-				<li class="navbar-item active">
-					<a class="nav-link" href="#">Home</a>
+				<li class="navbar-item">
+					<a class="nav-link" href="/">Home</a>
 				</li>
 				<li class="navbar-item">
-					<a class="nav-link" href="#">Blog</a>
+					<a class="nav-link" href="/archives">Blog</a>
 				</li>
 				<li class="navbar-item">
 					<a class="nav-link" href="#">Projects</a>
@@ -57,31 +55,31 @@
 	<div class="jumbotron">
 	</div>
 </header>
-  <div class="outer">
-    <section id="main">
+  <div class="outer row p-4">
+    <section id="main" class="col-lg-9">
   
   
     
     
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
+      <section class="container">
+        <h4 class="row">
           <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
+        </h4>
+        <div class="row">
     
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
+    <article class="card border-0 archive-article archive-type-post">
+  <div class="card-block archive-article-inner">
     <header class="archive-article-header">
       <a href="/2017/07/04/hello-world/" class="archive-article-date">
-  <time datetime="2017-07-05T00:42:02.000Z" itemprop="datePublished">Jul 4</time>
+<time datetime="2017-07-05T00:42:02.000Z" itemprop="datePublished">Jul 4</time>
 </a>
       
   
-    <h1 itemprop="name">
+    <h4 itemprop="name">
       <a class="archive-article-title" href="/2017/07/04/hello-world/">Hello World</a>
-    </h1>
+    </h4>
   
 
     </header>
@@ -94,7 +92,8 @@
 
 </section>
     
-      <aside id="sidebar">
+      <div class="col-lg-3">
+        <aside id="sidebar">
   
     
 
@@ -105,9 +104,9 @@
     
   
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
+  <div class="widget-wrap card mb-3">
+    <h3 class="widget-title card-header">Archives</h3>
+    <div class="widget card-block">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a></li></ul>
     </div>
   </div>
@@ -115,9 +114,9 @@
 
   
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
+  <div class="widget-wrap card mb-3">
+    <h3 class="widget-title card-header">Recent Posts</h3>
+    <div class="widget card-block">
       <ul>
         
           <li>
@@ -130,24 +129,23 @@
 
   
 </aside>
+      </div>
     
   </div>
   <footer id="footer">
   
-  <div class="outer">
+  <div class="outer row">
+  <!---
     <div id="footer-info" class="inner">
       &copy; 2017 Jon Trainor<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
+    -->
+    <div class="col-md-3 mx-auto">
+      <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3Ajon.trainor%3Aplaylist%3A3QVsJzWVRH2A5UyFvaHMVI" width="300" height="380" frameborder="0" allowtransparency="true"></iframe></div>
+    </div>
   </div>
 </footer>
-  <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
   <script src="/jquery/jquery.min.js"></script>
 
 <script src="/tether/js/tether.min.js"></script>
